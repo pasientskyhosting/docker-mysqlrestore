@@ -6,4 +6,4 @@ echo -n 'encryptionkey' > .backupencryptionkey
 
 start local server with:
 
-docker run -d -v pathtorestorefolder:/restore -p 3306:3306 pasientskyhosting/mysqlrestore 
+docker run -d -v /path/to/backupfolder:/restore -p 3306:3306 pasientskyhosting/docker-mysqlrestore
